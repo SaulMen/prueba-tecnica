@@ -1,0 +1,141 @@
+.pantalla-inicio {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #42a5f5; 
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  position: relative; 
+  overflow: hidden;   
+}
+
+.pantalla-inicio h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.crud-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.crud-header {display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  margin-bottom: 20px;
+}
+
+.crud-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.titulo-accion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.titulo-accion h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.botones-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.buscador {
+  width: 100%;
+  max-width: 300px;
+}
+
+.buscador ::ng-deep .mat-mdc-text-field-wrapper {
+  padding-bottom: 0; 
+}
+.buscador ::ng-deep .mat-mdc-form-field-subscript-wrapper {
+  display: none;
+}
+
+.btn-agregar .mat-icon {
+  transform: scale(1.4);
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  background-color: white;
+}
+
+table {
+  width: 100%;
+  min-width: 800px; 
+}
+
+th.mat-mdc-header-cell, td.mat-mdc-cell {
+  text-align: center !important;
+}
+
+::ng-deep .mat-sort-header-container {
+  justify-content: center;
+}
+
+td.mat-column-idcolaborador,
+td.mat-column-nombre,
+td.mat-column-apellido,
+td.mat-column-edad {
+  padding-right: 24px !important;
+}
+
+.mat-mdc-header-row {
+  background-color: #f8f9fa; 
+}
+
+.mat-mdc-row:hover {
+  background-color: #f1f3f4;
+  transition: background-color 0.2s ease;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.empty-state {
+  padding: 30px;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}

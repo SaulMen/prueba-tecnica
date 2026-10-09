@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Detalle del Colaborador</h2>
+<mat-dialog-content>
+  <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
+    <p><strong>ID:</strong> {{data.idcolaborador}}</p>
+    <p><strong>Nombre Completo:</strong> {{data.nombre}} {{data.apellido}}</p>
+    <p><strong>Dirección:</strong> {{data.direccion}}</p>
+    <p><strong>Edad:</strong> {{data.edad}} años</p>
+    <p><strong>Profesión:</strong> {{data.profesion}}</p>
+    <p><strong>Estado Civil:</strong> {{data.estado_civil}}</p>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-flat-button color="primary" mat-dialog-close>Cerrar</button>
+</mat-dialog-actions>

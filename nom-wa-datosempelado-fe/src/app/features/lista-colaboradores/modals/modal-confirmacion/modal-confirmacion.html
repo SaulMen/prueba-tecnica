@@ -1,0 +1,9 @@
+<h2 mat-dialog-title>Confirmar Eliminación</h2>
+<mat-dialog-content>
+  <p style="margin-top: 10px;">¿Estás seguro de que deseas eliminar al colaborador con ID <strong>{{id}}</strong>?</p>
+  <p style="color: #f44336; font-size: 0.9rem;">Esta acción es irreversible y eliminará el registro de la base de datos.</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-flat-button (click)="cancelar()">Cancelar</button>
+  <button mat-flat-button color="warn" (click)="confirmar()">Eliminar</button>
+</mat-dialog-actions>

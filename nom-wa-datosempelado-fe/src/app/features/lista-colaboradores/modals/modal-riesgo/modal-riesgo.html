@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Nivel de Riesgo (Edad: {{edad}})</h2>
+<mat-dialog-content>
+  <div [style.background-color]="colorHex" 
+       style="color: white; padding: 25px; border-radius: 8px; text-align: center; font-weight: bold; font-size: 1.1rem; margin-top: 10px;">
+    {{ mensajeRiesgo }}
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-flat-button color="primary" mat-dialog-close>Entendido</button>
+</mat-dialog-actions>
